@@ -1,0 +1,30 @@
+{
+    "name": "vladislavbogomolov/transheet",
+    "version": "0.0.1",
+    "license": "MIT",
+    "type": "library",
+    "description": "Google Sheets as a translation tool",
+    "autoload": {
+        "psr-4": {
+            "Vladislavbogomolov\\Transheet\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vladislav Bogomolov",
+            "email": "bogomolov.vlad@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "google/apiclient": "^v2.12.5"
+    },
+    "scripts": {
+        "post-update-cmd": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Sheets"
+        ]
+    }
+}
