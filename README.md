@@ -114,9 +114,12 @@ Example:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+This command will create ``transheet.php`` in each language folder.
+
 ```sh
 php artisan transheet:download
 ```
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
