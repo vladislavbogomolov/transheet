@@ -57,11 +57,20 @@
 3. Click "Manage"
 4. Click "Credentials"
 5. Click "Create credentials"
-6. Click "Service account"
-7. Type "ServiceAccount" in "Service account name" text field
-8. Click "Create and continue"
-9. Click "Done"
-10. Copy EMAIL address of service account created
+6. Click "OAuth client ID"
+7. Click "Configure consent screen"
+8. Choose "External" > Create
+9. Add scopes for "Google Sheets API" ``.../auth/drive.file``
+10. Save and continue
+11. Publish app
+12. Click on “Credentials” and choose "OAuth Client ID" from the “Create credentials”
+13. Choose "Web application" and click "Create"
+14. Click on "Download json", put file in root of your project and rename it in ``client_secret.json``
+15. Click "Service account"
+16. Type "ServiceAccount" in "Service account name" text field
+17. Click "Create and continue"
+18. Click "Done"
+19. Copy EMAIL address of service account created
 
 ### Create Spreadsheet
 1. [Start a new spreadsheet](https://docs.google.com/spreadsheets/u/0/create?usp=sheets_home&ths=true)
