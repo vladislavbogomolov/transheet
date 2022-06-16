@@ -114,7 +114,7 @@ Example:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This command will create ``transheet.php`` in each language folder.
+This command will create ``transheet.php`` in each language folder that will contain translation lists.
 
 ```sh
 php artisan transheet:download
