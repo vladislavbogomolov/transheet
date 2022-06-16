@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/vladislavbogomolov/transheet">
-    <img src="images/logo.png" alt="Logo" width="150">
+    <img src="images/logo.png" alt="Logo" width="300">
   </a>
 
   <h3 align="center">Transheet</h3>
