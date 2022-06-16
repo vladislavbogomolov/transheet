@@ -26,19 +26,17 @@ class TransheetController
         $client->setApprovalPrompt("consent");
         $client->setIncludeGrantedScopes(true);   // incremental auth
 
+
+        $spreadsheetId = env('SPREADSHEETID');
+        $range = env('SHEETNAME');
+
         $service = new Sheets($client);
-
-        $spreadsheetId = env('SPREADSHEETID', '');
-
-        $range = env('SHEETNAME', '');
         $response = $service->spreadsheets_values->get($spreadsheetId, $range);
         $rows = $response->getValues();
-
 
         $languages = array_shift($rows);
         array_shift($languages);
         $files = [];
-
 
         foreach ($rows as $row) {
             $key = array_shift($row);

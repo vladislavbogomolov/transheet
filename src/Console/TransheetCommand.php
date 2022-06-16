@@ -15,27 +15,18 @@ use Vladislavbogomolov\Transheet\TransheetController;
 class TransheetCommand extends Command
 {
     /**
-     * Artisan commands to include in the tinker shell.
-     *
-     * @var array
-     */
-    protected $commandWhitelist = [
-        'clear-compiled', 'down', 'env', 'inspire', 'migrate', 'migrate:install', 'optimize', 'up',
-    ];
-
-    /**
      * The console command name.
      *
      * @var string
      */
-    protected $name = 'transheet';
+    protected $name = 'transheet:download';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Interact with your application';
+    protected $description = 'Download translation from GoogleSheet';
 
     /**
      * Execute the console command.
@@ -47,7 +38,6 @@ class TransheetCommand extends Command
         $v = new TransheetController();
 
         dd($v->downloadTranslations());
-        dd("It's work!");
     }
 
 }
